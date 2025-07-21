@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>ჩემი პორტფოლიო</title>
+  </head>
+  <body>
+    <header class="header3">
+      <a href="#" class="logo3">საკონტაქტო ფორმა</a>
+      <nav class="nav-bar">
+        <a href="../../index.html" class="nav-home">მთავარი</a>
+        <a href="about.html" class="nav-about">ჩემს შესახებ</a>
+        <a href="contacts.html" class="nav-contacts">კონტაქტი</a>
+      </nav>
+    </header>
+    <main>
+      <form class="form" action="#" method="post">
+        <div class="form-group">
+          <label class="label" for="name">სახელი:</label>
+          <input
+            class="input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="შეიყვანე სახელი"
+            required
+            minlength="2"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="email">ელ.ფოსტა:</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="მაგ: example@mail.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="message">მესიჯი:</label>
+          <textarea
+            class="textarea"
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="დაწერე რამე..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="contact">სასურველი კავშირი:</label>
+          <select class="input" id="contact" name="contact" required>
+            <option value="">აირჩიე</option>
+            <option value="email">Email</option>
+            <option value="phone">ტელეფონი</option>
+            <option value="social">სოციალური მედია</option>
+          </select>
+        </div>
+
+        <button class="button" type="submit">submit</button>
+      </form>
+    </main>
+    <footer>
+      <p><i>გვერდი შექმნილია სასწავლო პროექტისთვის.</i></p>
+    </footer>
+  </body>
+</html>
